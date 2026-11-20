@@ -1,0 +1,31 @@
+category,word1,word2,training_frequency1,training_frequency2,word1_direct,word2_direct,both_in_selected_reviews,cosine
+positive-positive,excellent,wonderful,2836,2246,True,True,True,0.6117655038833618
+positive-positive,amazing,fantastic,1772,1060,True,True,True,0.8353341221809387
+positive-positive,good,great,20658,12649,True,True,True,0.7426097393035889
+positive-positive,beautiful,lovely,2906,596,True,True,True,0.7862344980239868
+positive-positive,enjoyable,entertaining,1159,2033,True,True,True,0.6716016530990601
+positive-positive,brilliant,excellent,1627,2836,True,True,True,0.6035953760147095
+negative-negative,terrible,awful,2337,2387,True,True,True,0.8681445717811584
+negative-negative,horrible,awful,1769,2387,True,True,True,0.8825110197067261
+negative-negative,bad,poor,12936,2683,True,True,True,0.5761388540267944
+negative-negative,boring,dull,2553,1107,True,True,True,0.7424660921096802
+negative-negative,disappointing,mediocre,588,468,True,True,True,0.6067777872085571
+negative-negative,dreadful,horrible,326,1769,True,True,True,0.7987993955612183
+positive-negative,good,bad,20658,12936,True,True,True,0.7517591118812561
+positive-negative,excellent,terrible,2836,2337,True,True,True,0.38541892170906067
+positive-negative,wonderful,awful,2246,2387,True,True,True,0.4126686751842499
+positive-negative,enjoyable,boring,1159,2553,True,True,True,0.4782775342464447
+positive-negative,beautiful,ugly,2906,464,True,True,True,0.4062672257423401
+positive-negative,love,hate,9035,1136,True,True,True,0.616469144821167
+unrelated controls,excellent,potato,2836,34,True,True,True,0.04400577023625374
+unrelated controls,terrible,planet,2337,587,True,True,True,0.15407487750053406
+unrelated controls,wonderful,keyboard,2246,42,True,True,True,0.05635257810354233
+unrelated controls,boring,river,2553,347,True,True,True,0.027636002749204636
+unrelated controls,amazing,bicycle,1772,49,True,True,True,0.018748683854937553
+unrelated controls,awful,umbrella,2387,16,True,True,True,0.06270447373390198
+morphological controls,enjoy,enjoyable,2484,1159,True,True,True,0.5415018200874329
+morphological controls,beautiful,beautifully,2906,609,True,True,True,0.6420251131057739
+morphological controls,bored,boring,738,2553,True,True,True,0.6507392525672913
+morphological controls,hope,hopeless,2056,114,True,True,True,0.3391188085079193
+morphological controls,good,goodness,20658,150,True,True,True,0.35710641741752625
+morphological controls,bad,badly,12936,881,True,True,True,0.5231350064277649

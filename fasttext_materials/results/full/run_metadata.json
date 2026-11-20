@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "smoke": false,
+  "dataset_revision": "d05f0155defa7991dad75bc68c5ccb6774b1fdc5",
+  "data": {
+    "published_source_rows": {
+      "train": 24904,
+      "test": 24678
+    },
+    "project_split_sizes": {
+      "training": 34707,
+      "validation": 7437,
+      "test": 7438
+    },
+    "full_training_indices_sha256_le_int64": "3fe569c54add383b4b7249ea3465297678599f30dc8c0d48d43ee7186f09ec82",
+    "selected_training_rows": 34707,
+    "selected_review_ids_and_text_sha256": "3e3087626fab9d84a65ff4c826ce80b7271efbcb83dcd2359001fd8ae9ffded1",
+    "ordered_source_text_label_sha256": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be"
+  },
+  "model_file": "/Users/saevarbrekisnorrason/Desktop/nlp1-student/assignment 2/models/cc.en.300.bin",
+  "model_sha256": "14c7167b130056944cbdc37b7451f055867fe9a4e3fed3bbc1ecc0e74f6763ca",
+  "model_dimensions": 300,
+  "model_word_count": 2000000,
+  "model_minn": 5,
+  "model_maxn": 5,
+  "neighbor_candidate_limit": 100000,
+  "correction_candidate_minimum_training_frequency": 20,
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "fasttext_version": "0.9.3",
+  "notes": [
+    "Source labels are used solely to reconstruct the assignment 1 stratified split and fingerprint.",
+    "Only the resulting training reviews are returned to the analyses.",
+    "The old project pooled published IMDb train/test before defining its own held-out test."
+  ]
+}

@@ -1,0 +1,5 @@
+transition,tokens,original_types
+direct -> direct,974585,36250
+direct -> oov,43256,10474
+oov -> direct,3663,1201
+oov -> oov,38202,14394

@@ -1,0 +1,2 @@
+# Reuses Phase 2's pinned Python 3.11 dependencies, including PyTorch 2.6.0.
+-r ../phase2/requirements.txt

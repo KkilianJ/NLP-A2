@@ -1,0 +1,31 @@
+category,word1,word2,training_frequency1,training_frequency2,word1_direct,word2_direct,both_in_selected_reviews,cosine
+positive-positive,excellent,wonderful,19,16,True,True,True,0.6117655038833618
+positive-positive,amazing,fantastic,13,6,True,True,True,0.8353341221809387
+positive-positive,good,great,118,82,True,True,True,0.7426097393035889
+positive-positive,beautiful,lovely,22,3,True,True,True,0.7862344980239868
+positive-positive,enjoyable,entertaining,2,6,True,True,True,0.6716016530990601
+positive-positive,brilliant,excellent,11,19,True,True,True,0.6035953760147095
+negative-negative,terrible,awful,12,10,True,True,True,0.8681445717811584
+negative-negative,horrible,awful,12,10,True,True,True,0.8825110197067261
+negative-negative,bad,poor,72,13,True,True,True,0.5761388540267944
+negative-negative,boring,dull,9,4,True,True,True,0.7424660921096802
+negative-negative,disappointing,mediocre,1,1,True,True,True,0.6067777872085571
+negative-negative,dreadful,horrible,1,12,True,True,True,0.7987993955612183
+positive-negative,good,bad,118,72,True,True,True,0.7517591118812561
+positive-negative,excellent,terrible,19,12,True,True,True,0.38541892170906067
+positive-negative,wonderful,awful,16,10,True,True,True,0.4126686751842499
+positive-negative,enjoyable,boring,2,9,True,True,True,0.4782775342464447
+positive-negative,beautiful,ugly,22,1,True,True,True,0.4062672257423401
+positive-negative,love,hate,49,4,True,True,True,0.616469144821167
+unrelated controls,excellent,potato,19,0,True,True,False,
+unrelated controls,terrible,planet,12,6,True,True,True,0.15407487750053406
+unrelated controls,wonderful,keyboard,16,0,True,True,False,
+unrelated controls,boring,river,9,1,True,True,True,0.027636002749204636
+unrelated controls,amazing,bicycle,13,0,True,True,False,
+unrelated controls,awful,umbrella,10,0,True,True,False,
+morphological controls,enjoy,enjoyable,15,2,True,True,True,0.5415018200874329
+morphological controls,beautiful,beautifully,22,4,True,True,True,0.6420251131057739
+morphological controls,bored,boring,5,9,True,True,True,0.6507392525672913
+morphological controls,hope,hopeless,11,0,True,True,False,
+morphological controls,good,goodness,118,0,True,True,False,
+morphological controls,bad,badly,72,6,True,True,True,0.5231350064277649

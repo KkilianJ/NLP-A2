@@ -1,0 +1,36 @@
+{
+  "audit_date": "2026-11-20",
+  "scope": "Read saved configurations, row IDs, labels, predictions and metrics only; no model training or dataset evaluation.",
+  "dataset": {
+    "classifier_revision": "d05f0155defa7991dad75bc68c5ccb6774b1fdc5",
+    "ordered_text_and_label_sha256_recorded_by_both_tracks": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be",
+    "project_training_reviews": 34707,
+    "project_validation_reviews": 7437,
+    "project_test_reviews": 7438,
+    "original_published_partitions_pooled_before_project_split": true,
+    "glove_coverage_caveat": "The early GloVe coverage output used the published train split; its coverage script does not pin or record a dataset revision. If it used the same source snapshot, this population overlaps project validation and test."
+  },
+  "ordered_split_id_audit": {
+    "encoding": "Each saved row ID encoded as signed little-endian int64, concatenated in saved order, then SHA-256.",
+    "glove_saved_train_row_indices_source": "meanpool_output/train.npz:row_indices.npy",
+    "glove_saved_train_row_count": 34707,
+    "glove_saved_train_sha256": "3fe569c54add383b4b7249ea3465297678599f30dc8c0d48d43ee7186f09ec82",
+    "fasttext_recorded_train_sha256": "3fe569c54add383b4b7249ea3465297678599f30dc8c0d48d43ee7186f09ec82",
+    "glove_saved_validation_row_indices_source": "meanpool_output/validation.npz:row_indices.npy",
+    "glove_saved_validation_row_count": 7437,
+    "glove_saved_validation_sha256": "4eb93d6010100998cfc33aecf6cf1533ca6ffb845ce463d88d2139a0f0e7514b",
+    "fasttext_recorded_validation_sha256": "4eb93d6010100998cfc33aecf6cf1533ca6ffb845ce463d88d2139a0f0e7514b",
+    "glove_final_predictions": "final_glove_study/validation_predictions.csv:project1_row,label",
+    "fasttext_error_predictions": "fasttext_materials/remaining_experiments/results/errors-lstm-vs-lr/per_example.csv:review_id,label",
+    "prediction_ids_same_order": true,
+    "prediction_ids_unique_per_track": 7437,
+    "prediction_label_mismatches": 0,
+    "test_index_fingerprint_status": "No saved cross-track project-test ID fingerprint was found, and no fastText test predictions exist.",
+    "project1_historical_score_limit": "Project 1's historical baseline configuration does not itself contain ordered source or validation-ID fingerprints; exact identity of the rows used for that historical score cannot be established from it alone."
+  },
+  "classification_protocol_differences": {
+    "fasttext": "300d; case- and markup-preserving regex; full-review pooling or first 256/512 regex tokens; frozen or trainable lookup; usually 34707 fitting reviews; project-validation checkpoint selection.",
+    "glove_final": "GloVe 6B 100d; cleaned/lowercased text; first 256 GloVe-covered tokens; 31236 fitting and 3471 inner-validation reviews; inner-validation checkpoint selection.",
+    "test_status": "Saved GloVe test metrics exist for three seed-42 systems; no saved fastText held-out test result was found."
+  }
+}

@@ -1,0 +1,7 @@
+# Python 3.11; NumPy 1.x avoids compatibility problems in the original fastText binding.
+fasttext==0.9.3
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==18.1.0
+matplotlib==3.9.4
+scikit-learn==1.5.2

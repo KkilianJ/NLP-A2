@@ -1,0 +1,37 @@
+{
+  "common": {"embedding_dimension": 300, "embedding": "pretrained_frozen", "hidden_size": 64,
+    "lstm_layers": 1, "bidirectional": false, "padding_idx": 0, "data_loader_workers": 0,
+    "max_sequence_length": 512, "batch_size": 32, "learning_rate": 0.001, "epochs": 30,
+    "patience": 5, "dropout": 0.0, "weight_decay": 0.0, "train_fraction": 1.0,
+    "subset_seed": 42, "threshold": 0.5, "head": "linear", "optimizer": "Adam",
+    "adam_betas": [0.9, 0.999], "adam_epsilon": 1e-8,
+    "loss": "BCEWithLogitsLoss", "loss_reduction": "mean", "random_embedding_mean": 0.0, "random_embedding_std": 0.05},
+  "experiments": {
+    "A1": {"baseline_alias": true, "description": "Frozen pretrained lookup"},
+    "A2": {"embedding": "pretrained_trainable", "description": "Fine-tune the pretrained token lookup"},
+    "A3": {"embedding": "random_trainable", "description": "Train randomly initialized token lookup"},
+    "B1": {"train_fraction": 0.5, "description": "Fixed stratified half of project training reviews"},
+    "B2": {"baseline_alias": true, "description": "Full-data baseline"},
+    "C1": {"hidden_size": 32, "description": "LSTM hidden size 32"},
+    "C2": {"baseline_alias": true, "description": "LSTM hidden size 64 baseline"},
+    "C3": {"hidden_size": 128, "description": "LSTM hidden size 128"},
+    "D1": {"learning_rate": 0.0003, "description": "Adam learning rate 0.0003"},
+    "D2": {"baseline_alias": true, "description": "Adam learning rate 0.001 baseline"},
+    "D3": {"learning_rate": 0.003, "description": "Adam learning rate 0.003"},
+    "E1": {"baseline_alias": true, "description": "No-regularization baseline"},
+    "E2": {"dropout": 0.3, "description": "Dropout after final valid LSTM output"},
+    "E3": {"weight_decay": 0.0001, "description": "Adam weight decay 0.0001"},
+    "F-base": {"description": "Frozen baseline repeated with an individual seed"},
+    "F-alternative": {"description": "One selected A/B/C/D/E alternative repeated with an individual seed", "requires_alternative": true},
+    "F-mean": {"model_family": "lr_mean", "lr_c": 1.0, "lr_max_iter": 1000, "lr_class_weight": null,
+      "scaler": "standardize using training data only", "description": "Phase 2 mean-pooling logistic regression with an individual seed"}
+  },
+  "analyses": {
+    "G": {"scope": "validation", "default_left": "lstm512", "default_right": "lr-mean",
+      "threshold": 0.5, "small_group_threshold": 30, "single_class_macro_f1": "omitted",
+      "features": ["token_length", "negation_indicator", "oov_fraction", "oov_fraction_256", "oov_fraction_512", "truncated_256", "truncated_512", "confidence"]},
+    "H-project1": {"scope": "saved_validation_metrics", "require_verified_fingerprints_for_exact_split": true},
+    "H-final": {"scope": "heldout_test", "requires_explicit_locked_model_confirmation": true,
+      "models_per_invocation": 1, "threshold": 0.5}
+  }
+}

@@ -1,0 +1,3 @@
+# Install from this file into a separate Python 3.11 environment.
+-r ../requirements-lock.txt
+torch==2.6.0
