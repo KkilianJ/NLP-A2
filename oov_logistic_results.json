@@ -1,0 +1,77 @@
+{
+  "ordered_sha256": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be",
+  "fitting_reviews": 31236,
+  "inner_validation_reviews": 3471,
+  "project1_validation_reviews": 7437,
+  "inner_split_seed": 42,
+  "oov_bigram_features": 1397,
+  "models": {
+    "meanpool": {
+      "selected_C": 0.1,
+      "grid": [
+        {
+          "C": 0.001,
+          "inner_macro_f1": 0.8124454205558607,
+          "iterations": 21
+        },
+        {
+          "C": 0.01,
+          "inner_macro_f1": 0.8147446416214033,
+          "iterations": 41
+        },
+        {
+          "C": 0.1,
+          "inner_macro_f1": 0.8164706263205799,
+          "iterations": 51
+        },
+        {
+          "C": 1.0,
+          "inner_macro_f1": 0.8161832282587187,
+          "iterations": 51
+        },
+        {
+          "C": 10.0,
+          "inner_macro_f1": 0.8164706263205799,
+          "iterations": 49
+        }
+      ],
+      "fitting_macro_f1": 0.8041362498294536,
+      "project1_validation_macro_f1": 0.7968086760487731
+    },
+    "meanpool_plus_oov_bigrams": {
+      "selected_C": 0.1,
+      "grid": [
+        {
+          "C": 0.001,
+          "inner_macro_f1": 0.8135981390831954,
+          "iterations": 22
+        },
+        {
+          "C": 0.01,
+          "inner_macro_f1": 0.8210652601089419,
+          "iterations": 51
+        },
+        {
+          "C": 0.1,
+          "inner_macro_f1": 0.8219308469308468,
+          "iterations": 136
+        },
+        {
+          "C": 1.0,
+          "inner_macro_f1": 0.8199172459821467,
+          "iterations": 307
+        },
+        {
+          "C": 10.0,
+          "inner_macro_f1": 0.817891959416875,
+          "iterations": 613
+        }
+      ],
+      "fitting_macro_f1": 0.8145088726108909,
+      "project1_validation_macro_f1": 0.7956114530371956
+    }
+  },
+  "project1_validation_macro_f1_delta": -0.0011972230115775417,
+  "only_meanpool_correct": 196,
+  "only_augmented_correct": 187
+}

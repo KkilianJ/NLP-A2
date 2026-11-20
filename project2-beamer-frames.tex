@@ -1,0 +1,179 @@
+\begin{frame}[t]{Settings and Tokenisation}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize
+\textbf{GloVe}\par\smallskip
+\textbf{Data and evaluation}\par
+IMDb sentiment. Stratified 70/15/15 split (seed 42). Fit 31,236, tune 3,471, validate 7,437, test 7,438. Report macro-F1 and accuracy.
+
+\smallskip
+\textbf{Coverage on the published training split}\par
+GloVe 6B (100d). Strip HTML, lowercase text and exclude standalone punctuation from counts.
+
+\smallskip
+{\scriptsize
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrr@{}}
+\hline
+Tokenizer & Token & Type \\
+\hline
+Whitespace & 85.33\% & 24.43\% \\
+Regex & 97.67\% & 74.14\% \\
+Regex + negation & 98.25\% & 74.17\% \\
+\hline
+\end{tabular*}\par}
+
+\smallskip
+Used regex with contractions intact for classification.
+\end{column}
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize\textbf{fastText}\par
+% Teammate content
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Word Embeddings and Pooling}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize
+\textbf{GloVe}\par\smallskip
+\textbf{Cosine neighbours}\par
+\textit{awful} $\to$ \textit{horrible} (0.922).\par
+\textit{overrated} $\to$ \textit{underrated} (0.809).\par
+
+\smallskip
+\textbf{Pooling and initialisation}\par
+{\scriptsize Validation macro-F1 with a linear head, 128-token cap.\par
+\smallskip
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrr@{}}
+\hline
+MeanPool & Random & GloVe \\
+\hline
+Frozen & 63.57\% & 71.48\% \\
+Trainable & 85.36\% & 85.51\% \\
+\hline
+\end{tabular*}\par}
+\smallskip
+With fine-tuned GloVe, MeanPool 85.66\% vs MaxPool 83.58\% (seed 42).
+
+\smallskip
+\textbf{Missing words}\par
+Character 3--5-gram ridge improved RMSE (0.4727 to 0.4674). Character bigrams did not improve classification consistently.
+\end{column}
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize\textbf{fastText}\par
+% Teammate content
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Recurrent Encoders}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize
+\textbf{GloVe}\par\smallskip
+\textbf{BiGRU and BiLSTM}\par
+One bidirectional layer, 64 units per direction, linear head. Adam 0.001, batch 128, gradient clip 1.0. Max 8 epochs, patience 2. Select by inner-validation macro-F1.
+
+\smallskip
+\textbf{Why 256 tokens?}\par
+Cap 256 GloVe hits. Inner-validation macro-F1 rose from 84.37\% at 128 to 87.87\% at 256.
+
+\smallskip
+\textbf{BiGRU ablations}\par
+{\scriptsize
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lr@{}}
+\hline
+Training setup & Val. macro-F1 \\
+\hline
+Frozen, half data & 85.57\% \\
+Frozen, full data & 86.87\% \\
+Fine-tuned, full data & 88.34\% \\
+\hline
+\end{tabular*}\par}
+\smallskip
+Fine-tuned BiGRU peaked at epoch 2 on seeds 42--44. BiLSTM reused these settings (seed 42).
+\end{column}
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize\textbf{fastText}\par
+% Teammate content
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Main Results}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize
+\textbf{GloVe}\par\smallskip
+\textbf{Project validation, seed 42}\par
+Fine-tuned GloVe 100d, first 256 hits. Linear head, binary cross-entropy, threshold 0.5.
+
+\smallskip
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\hline
+Model & Epoch & F1 & Acc. \\
+\hline
+MeanPool & 4 & \textbf{88.85\%} & \textbf{88.85\%} \\
+BiGRU & 2 & 88.57\% & 88.57\% \\
+BiLSTM & 5 & 86.86\% & 86.88\% \\
+\hline
+\end{tabular*}\par}
+
+\smallskip
+\textbf{MeanPool training}\par
+Adagrad 0.05, batch 256, max 12 epochs, patience 3. Early stop on inner macro-F1.
+
+\smallskip
+{\scriptsize
+Val. F1, seeds 42--44: MeanPool 88.77\%, BiGRU 88.34\%.\par
+Test F1, seed 42: MeanPool 89.11\%, BiGRU 88.76\%.\par
+Project 1 BPE-bigram MLP: 90.12\% on the same validation split.\par}
+\end{column}
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize\textbf{fastText}\par
+% Teammate content
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Error Analysis}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize
+\textbf{GloVe}\par\smallskip
+\textbf{Validation macro-F1 by review type}\par
+Fine-tuned models, seed 42, paired predictions.
+
+\smallskip
+{\scriptsize
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\hline
+Subset & Mean & GRU & LSTM \\
+\hline
+Short & 89.57 & \textbf{90.39} & 88.38 \\
+Long & \textbf{86.64} & 85.74 & 84.66 \\
+Negation cue & \textbf{88.59} & 88.03 & 86.42 \\
+Truncated & \textbf{86.15} & 85.62 & 84.29 \\
+\hline
+\end{tabular*}\par
+Values are percentages.\par}
+
+\smallskip
+BiGRU alone was right on 286 reviews. MeanPool alone was right on 307.
+
+\smallskip
+BiGRU led on short reviews. MeanPool led on long reviews and on reviews with a negation cue.
+
+\smallskip
+\textbf{Follow-up}\par
+Compare a 256-token prefix with 256 tokens taken from the start and end.
+\end{column}
+\begin{column}{0.48\textwidth}
+\raggedright\footnotesize\textbf{fastText}\par
+% Teammate content
+\end{column}
+\end{columns}
+\end{frame}

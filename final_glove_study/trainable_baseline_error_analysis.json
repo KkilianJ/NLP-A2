@@ -1,0 +1,164 @@
+{
+  "gru_minus_trainable_meanpool_ci95": [
+    -0.00936469397745556,
+    0.0035008479735060363
+  ],
+  "groups": {
+    "all": {
+      "n": 7437,
+      "meanpool": {
+        "macro_f1": 0.8885101637247523,
+        "accuracy": 0.8885303213661423
+      },
+      "gru": {
+        "macro_f1": 0.8856887265751807,
+        "accuracy": 0.8857066021245126
+      },
+      "only_meanpool_correct": 307,
+      "only_gru_correct": 286
+    },
+    "short": {
+      "n": 2468,
+      "meanpool": {
+        "macro_f1": 0.8956992697028212,
+        "accuracy": 0.8958670988654781
+      },
+      "gru": {
+        "macro_f1": 0.9038867376692391,
+        "accuracy": 0.9039708265802269
+      },
+      "only_meanpool_correct": 79,
+      "only_gru_correct": 99
+    },
+    "medium": {
+      "n": 2514,
+      "meanpool": {
+        "macro_f1": 0.9029137768942715,
+        "accuracy": 0.9029435163086714
+      },
+      "gru": {
+        "macro_f1": 0.8951429334927694,
+        "accuracy": 0.8953858392999204
+      },
+      "only_meanpool_correct": 101,
+      "only_gru_correct": 82
+    },
+    "long": {
+      "n": 2455,
+      "meanpool": {
+        "macro_f1": 0.8663502074688797,
+        "accuracy": 0.8663951120162933
+      },
+      "gru": {
+        "macro_f1": 0.8573858921161825,
+        "accuracy": 0.8574338085539714
+      },
+      "only_meanpool_correct": 127,
+      "only_gru_correct": 105
+    },
+    "negation_present": {
+      "n": 6510,
+      "meanpool": {
+        "macro_f1": 0.8859201958582288,
+        "accuracy": 0.886021505376344
+      },
+      "gru": {
+        "macro_f1": 0.8802646280326163,
+        "accuracy": 0.8806451612903226
+      },
+      "only_meanpool_correct": 281,
+      "only_gru_correct": 246
+    },
+    "negation_absent": {
+      "n": 927,
+      "meanpool": {
+        "macro_f1": 0.895653085226545,
+        "accuracy": 0.9061488673139159
+      },
+      "gru": {
+        "macro_f1": 0.9137127942130919,
+        "accuracy": 0.9212513484358145
+      },
+      "only_meanpool_correct": 26,
+      "only_gru_correct": 40
+    },
+    "contrast_present": {
+      "n": 5928,
+      "meanpool": {
+        "macro_f1": 0.8825884736656384,
+        "accuracy": 0.8825910931174089
+      },
+      "gru": {
+        "macro_f1": 0.8791270040615191,
+        "accuracy": 0.8792172739541161
+      },
+      "only_meanpool_correct": 259,
+      "only_gru_correct": 239
+    },
+    "contrast_absent": {
+      "n": 1509,
+      "meanpool": {
+        "macro_f1": 0.9116610480140606,
+        "accuracy": 0.9118621603711067
+      },
+      "gru": {
+        "macro_f1": 0.9110134136037178,
+        "accuracy": 0.9111994698475812
+      },
+      "only_meanpool_correct": 48,
+      "only_gru_correct": 47
+    },
+    "truncated": {
+      "n": 2031,
+      "meanpool": {
+        "macro_f1": 0.8614704145394277,
+        "accuracy": 0.8616445100935499
+      },
+      "gru": {
+        "macro_f1": 0.8562267510191732,
+        "accuracy": 0.8562284588872476
+      },
+      "only_meanpool_correct": 108,
+      "only_gru_correct": 97
+    },
+    "not_truncated": {
+      "n": 5406,
+      "meanpool": {
+        "macro_f1": 0.8986284311292629,
+        "accuracy": 0.8986311505734369
+      },
+      "gru": {
+        "macro_f1": 0.8967552256460525,
+        "accuracy": 0.8967813540510544
+      },
+      "only_meanpool_correct": 199,
+      "only_gru_correct": 189
+    },
+    "above_training_median_oov_rate": {
+      "n": 3811,
+      "meanpool": {
+        "macro_f1": 0.8800844413330726,
+        "accuracy": 0.8806087641039098
+      },
+      "gru": {
+        "macro_f1": 0.8782522144421128,
+        "accuracy": 0.879296772500656
+      },
+      "only_meanpool_correct": 163,
+      "only_gru_correct": 158
+    },
+    "at_or_below_training_median_oov_rate": {
+      "n": 3626,
+      "meanpool": {
+        "macro_f1": 0.8958747761435605,
+        "accuracy": 0.8968560397131826
+      },
+      "gru": {
+        "macro_f1": 0.8918876023716931,
+        "accuracy": 0.8924434638720353
+      },
+      "only_meanpool_correct": 144,
+      "only_gru_correct": 128
+    }
+  }
+}

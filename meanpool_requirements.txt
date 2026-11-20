@@ -1,0 +1,4 @@
+-r embedding_requirements.txt
+pandas
+baycomp
+tokenizers

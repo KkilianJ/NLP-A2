@@ -1,0 +1,68 @@
+{
+  "dataset_revision": "d05f0155defa7991dad75bc68c5ccb6774b1fdc5",
+  "ordered_sha256": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be",
+  "project1_split_seed": 42,
+  "train_reviews": 34707,
+  "validation_reviews": 7437,
+  "oov_bigram_features": 1441,
+  "validation_reviews_with_known_oov_bigrams": 6813,
+  "mlp_hidden_units": 16,
+  "runs": [
+    {
+      "seed": 42,
+      "meanpool": {
+        "macro_f1": 0.8079773392330981,
+        "epochs": 100,
+        "convergence_warning": true
+      },
+      "meanpool_plus_oov_bigrams": {
+        "macro_f1": 0.7754319807046159,
+        "epochs": 100,
+        "convergence_warning": true
+      },
+      "macro_f1_delta": -0.03254535852848217
+    },
+    {
+      "seed": 43,
+      "meanpool": {
+        "macro_f1": 0.8054308908263383,
+        "epochs": 100,
+        "convergence_warning": true
+      },
+      "meanpool_plus_oov_bigrams": {
+        "macro_f1": 0.7722092689217994,
+        "epochs": 100,
+        "convergence_warning": true
+      },
+      "macro_f1_delta": -0.03322162190453892
+    },
+    {
+      "seed": 44,
+      "meanpool": {
+        "macro_f1": 0.8018017982183288,
+        "epochs": 100,
+        "convergence_warning": true
+      },
+      "meanpool_plus_oov_bigrams": {
+        "macro_f1": 0.7736984830178547,
+        "epochs": 100,
+        "convergence_warning": true
+      },
+      "macro_f1_delta": -0.028103315200474044
+    }
+  ],
+  "summary": {
+    "meanpool": {
+      "mean": 0.8050700094259217,
+      "sample_sd": 0.003103546881416427
+    },
+    "meanpool_plus_oov_bigrams": {
+      "mean": 0.7737799108814234,
+      "sample_sd": 0.0016128982241605107
+    },
+    "paired_delta": {
+      "mean": -0.03129009854449838,
+      "sample_sd": 0.0027804719203333296
+    }
+  }
+}

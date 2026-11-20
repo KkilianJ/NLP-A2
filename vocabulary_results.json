@@ -1,0 +1,423 @@
+{
+  "reviews": 24904,
+  "example_first_30_tokens": {
+    "whitespace": [
+      "i",
+      "rented",
+      "i",
+      "am",
+      "curious-yellow",
+      "from",
+      "my",
+      "video",
+      "store",
+      "because",
+      "of",
+      "all",
+      "the",
+      "controversy",
+      "that",
+      "surrounded",
+      "it",
+      "when",
+      "it",
+      "was",
+      "first",
+      "released",
+      "in",
+      "1967.",
+      "i",
+      "also",
+      "heard",
+      "that",
+      "at",
+      "first"
+    ],
+    "regex": [
+      "i",
+      "rented",
+      "i",
+      "am",
+      "curious",
+      "yellow",
+      "from",
+      "my",
+      "video",
+      "store",
+      "because",
+      "of",
+      "all",
+      "the",
+      "controversy",
+      "that",
+      "surrounded",
+      "it",
+      "when",
+      "it",
+      "was",
+      "first",
+      "released",
+      "in",
+      "1967",
+      "i",
+      "also",
+      "heard",
+      "that",
+      "at"
+    ],
+    "regex_expand_negation": [
+      "i",
+      "rented",
+      "i",
+      "am",
+      "curious",
+      "yellow",
+      "from",
+      "my",
+      "video",
+      "store",
+      "because",
+      "of",
+      "all",
+      "the",
+      "controversy",
+      "that",
+      "surrounded",
+      "it",
+      "when",
+      "it",
+      "was",
+      "first",
+      "released",
+      "in",
+      "1967",
+      "i",
+      "also",
+      "heard",
+      "that",
+      "at"
+    ]
+  },
+  "expanded_negation_occurrences": 33200,
+  "expanded_negation_by_form": {
+    "don't": 8420,
+    "doesn't": 4520,
+    "didn't": 4307,
+    "can't": 3517,
+    "isn't": 3169,
+    "wasn't": 2302,
+    "couldn't": 1487,
+    "won't": 1195,
+    "wouldn't": 1053,
+    "aren't": 881,
+    "haven't": 798,
+    "weren't": 488,
+    "hasn't": 370,
+    "shouldn't": 337,
+    "hadn't": 281,
+    "needn't": 22,
+    "dosen't": 7,
+    "shan't": 7,
+    "mustn't": 7,
+    "wan't": 4,
+    "musn't": 2,
+    "doesen't": 2,
+    "arn't": 2,
+    "havn't": 2,
+    "isbn't": 2,
+    "heaven't": 1,
+    "wouln't": 1,
+    "hasen't": 1,
+    "doen't": 1,
+    "son't": 1,
+    "dosn't": 1,
+    "wern't": 1,
+    "shudn't": 1,
+    "wqasn't": 1,
+    "y'ain't": 1,
+    "an't": 1,
+    "doeesn't": 1,
+    "ibsen't": 1,
+    "din't": 1,
+    "shoudln't": 1,
+    "cameraman't": 1,
+    "twasn't": 1,
+    "mightn't": 1
+  },
+  "schemes": {
+    "whitespace": {
+      "tokens": 5746555,
+      "types": 235606,
+      "covered_tokens": 4903655,
+      "covered_types": 57548,
+      "token_coverage_percent": 85.3320815688704,
+      "type_coverage_percent": 24.425523967980443,
+      "top_20_missing": [
+        {
+          "word": "it's",
+          "count": 16600
+        },
+        {
+          "word": "don't",
+          "count": 8025
+        },
+        {
+          "word": "it.",
+          "count": 6386
+        },
+        {
+          "word": "movie.",
+          "count": 6069
+        },
+        {
+          "word": "film.",
+          "count": 5189
+        },
+        {
+          "word": "doesn't",
+          "count": 4414
+        },
+        {
+          "word": "i'm",
+          "count": 4407
+        },
+        {
+          "word": "didn't",
+          "count": 4146
+        },
+        {
+          "word": "film,",
+          "count": 4028
+        },
+        {
+          "word": "movie,",
+          "count": 3975
+        },
+        {
+          "word": "can't",
+          "count": 3436
+        },
+        {
+          "word": "i've",
+          "count": 3272
+        },
+        {
+          "word": "that's",
+          "count": 3253
+        },
+        {
+          "word": "isn't",
+          "count": 3000
+        },
+        {
+          "word": "it,",
+          "count": 2998
+        },
+        {
+          "word": "there's",
+          "count": 2957
+        },
+        {
+          "word": "he's",
+          "count": 2795
+        },
+        {
+          "word": "\"the",
+          "count": 2781
+        },
+        {
+          "word": "however,",
+          "count": 2533
+        },
+        {
+          "word": "time.",
+          "count": 2225
+        }
+      ]
+    },
+    "regex": {
+      "tokens": 5822255,
+      "types": 81371,
+      "covered_tokens": 5686831,
+      "covered_types": 60326,
+      "token_coverage_percent": 97.67402836186324,
+      "type_coverage_percent": 74.13697754728344,
+      "top_20_missing": [
+        {
+          "word": "it's",
+          "count": 17118
+        },
+        {
+          "word": "don't",
+          "count": 8420
+        },
+        {
+          "word": "i'm",
+          "count": 4740
+        },
+        {
+          "word": "doesn't",
+          "count": 4520
+        },
+        {
+          "word": "didn't",
+          "count": 4307
+        },
+        {
+          "word": "can't",
+          "count": 3517
+        },
+        {
+          "word": "that's",
+          "count": 3406
+        },
+        {
+          "word": "i've",
+          "count": 3341
+        },
+        {
+          "word": "isn't",
+          "count": 3169
+        },
+        {
+          "word": "there's",
+          "count": 3075
+        },
+        {
+          "word": "he's",
+          "count": 2886
+        },
+        {
+          "word": "wasn't",
+          "count": 2302
+        },
+        {
+          "word": "you're",
+          "count": 1930
+        },
+        {
+          "word": "couldn't",
+          "count": 1487
+        },
+        {
+          "word": "she's",
+          "count": 1440
+        },
+        {
+          "word": "i'd",
+          "count": 1345
+        },
+        {
+          "word": "you'll",
+          "count": 1290
+        },
+        {
+          "word": "they're",
+          "count": 1241
+        },
+        {
+          "word": "won't",
+          "count": 1195
+        },
+        {
+          "word": "wouldn't",
+          "count": 1053
+        }
+      ]
+    },
+    "regex_expand_negation": {
+      "tokens": 5855455,
+      "types": 81339,
+      "covered_tokens": 5753223,
+      "covered_types": 60331,
+      "token_coverage_percent": 98.25407248454646,
+      "type_coverage_percent": 74.17229127478824,
+      "top_20_missing": [
+        {
+          "word": "it's",
+          "count": 17118
+        },
+        {
+          "word": "i'm",
+          "count": 4740
+        },
+        {
+          "word": "that's",
+          "count": 3406
+        },
+        {
+          "word": "i've",
+          "count": 3341
+        },
+        {
+          "word": "there's",
+          "count": 3075
+        },
+        {
+          "word": "he's",
+          "count": 2886
+        },
+        {
+          "word": "you're",
+          "count": 1930
+        },
+        {
+          "word": "she's",
+          "count": 1440
+        },
+        {
+          "word": "i'd",
+          "count": 1345
+        },
+        {
+          "word": "you'll",
+          "count": 1290
+        },
+        {
+          "word": "they're",
+          "count": 1241
+        },
+        {
+          "word": "film's",
+          "count": 1033
+        },
+        {
+          "word": "i'll",
+          "count": 974
+        },
+        {
+          "word": "what's",
+          "count": 773
+        },
+        {
+          "word": "who's",
+          "count": 713
+        },
+        {
+          "word": "you've",
+          "count": 705
+        },
+        {
+          "word": "let's",
+          "count": 671
+        },
+        {
+          "word": "we're",
+          "count": 527
+        },
+        {
+          "word": "80's",
+          "count": 439
+        },
+        {
+          "word": "movie's",
+          "count": 422
+        }
+      ]
+    }
+  },
+  "dataset": "mteb/imdb",
+  "split": "train",
+  "glove_file": "glove.6B.zip",
+  "glove_types": 400001
+}

@@ -1,0 +1,152 @@
+{
+  "training_length_tertiles": [
+    139,
+    231
+  ],
+  "training_median_oov_rate": 0.02097902097902098,
+  "groups": {
+    "length <= 139": {
+      "n": 2468,
+      "meanpool": {
+        "macro_f1": 0.8025107858500427,
+        "accuracy": 0.8026742301458671
+      },
+      "gru": {
+        "macro_f1": 0.9038867376692391,
+        "accuracy": 0.9039708265802269
+      },
+      "only_meanpool_correct": 71,
+      "only_gru_correct": 321
+    },
+    "length 140\u2013231": {
+      "n": 2514,
+      "meanpool": {
+        "macro_f1": 0.781438627290171,
+        "accuracy": 0.7816229116945107
+      },
+      "gru": {
+        "macro_f1": 0.8951429334927694,
+        "accuracy": 0.8953858392999204
+      },
+      "only_meanpool_correct": 65,
+      "only_gru_correct": 351
+    },
+    "length > 231": {
+      "n": 2455,
+      "meanpool": {
+        "macro_f1": 0.7675801025248539,
+        "accuracy": 0.7678207739307535
+      },
+      "gru": {
+        "macro_f1": 0.8573858921161825,
+        "accuracy": 0.8574338085539714
+      },
+      "only_meanpool_correct": 118,
+      "only_gru_correct": 338
+    },
+    "negation cue present": {
+      "n": 6510,
+      "meanpool": {
+        "macro_f1": 0.7785156808176208,
+        "accuracy": 0.7788018433179723
+      },
+      "gru": {
+        "macro_f1": 0.8802646280326163,
+        "accuracy": 0.8806451612903226
+      },
+      "only_meanpool_correct": 229,
+      "only_gru_correct": 892
+    },
+    "negation cue absent": {
+      "n": 927,
+      "meanpool": {
+        "macro_f1": 0.7982161215198372,
+        "accuracy": 0.8209277238403452
+      },
+      "gru": {
+        "macro_f1": 0.9137127942130919,
+        "accuracy": 0.9212513484358145
+      },
+      "only_meanpool_correct": 25,
+      "only_gru_correct": 118
+    },
+    "contrast cue present": {
+      "n": 5928,
+      "meanpool": {
+        "macro_f1": 0.773614646881152,
+        "accuracy": 0.7736167341430499
+      },
+      "gru": {
+        "macro_f1": 0.8791270040615191,
+        "accuracy": 0.8792172739541161
+      },
+      "only_meanpool_correct": 207,
+      "only_gru_correct": 833
+    },
+    "contrast cue absent": {
+      "n": 1509,
+      "meanpool": {
+        "macro_f1": 0.8243535432987545,
+        "accuracy": 0.8250497017892644
+      },
+      "gru": {
+        "macro_f1": 0.9110134136037178,
+        "accuracy": 0.9111994698475812
+      },
+      "only_meanpool_correct": 47,
+      "only_gru_correct": 177
+    },
+    "OOV rate at or below training median": {
+      "n": 3626,
+      "meanpool": {
+        "macro_f1": 0.7857496140311407,
+        "accuracy": 0.7879205736348593
+      },
+      "gru": {
+        "macro_f1": 0.8918876023716931,
+        "accuracy": 0.8924434638720353
+      },
+      "only_meanpool_correct": 118,
+      "only_gru_correct": 497
+    },
+    "OOV rate above training median": {
+      "n": 3811,
+      "meanpool": {
+        "macro_f1": 0.779111124006693,
+        "accuracy": 0.7803726056153241
+      },
+      "gru": {
+        "macro_f1": 0.8782522144421128,
+        "accuracy": 0.879296772500656
+      },
+      "only_meanpool_correct": 136,
+      "only_gru_correct": 513
+    },
+    "truncated": {
+      "n": 2031,
+      "meanpool": {
+        "macro_f1": 0.7661056926055215,
+        "accuracy": 0.7666174298375185
+      },
+      "gru": {
+        "macro_f1": 0.8562267510191732,
+        "accuracy": 0.8562284588872476
+      },
+      "only_meanpool_correct": 100,
+      "only_gru_correct": 282
+    },
+    "not truncated": {
+      "n": 5406,
+      "meanpool": {
+        "macro_f1": 0.7906007121692913,
+        "accuracy": 0.7906030336662967
+      },
+      "gru": {
+        "macro_f1": 0.8967552256460525,
+        "accuracy": 0.8967813540510544
+      },
+      "only_meanpool_correct": 154,
+      "only_gru_correct": 728
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fingerprint": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be",
+  "seed": 42,
+  "selected_epoch": 5,
+  "configuration": {
+    "hidden": 64,
+    "limit": 256,
+    "lr": 0.001,
+    "frozen": false
+  },
+  "test_reviews": 7438,
+  "validation_predictions_reproduced": true,
+  "macro_f1": 0.8668301391172402,
+  "accuracy": 0.8668997042215649
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "mteb/imdb",
+  "revision": "d05f0155defa7991dad75bc68c5ccb6774b1fdc5",
+  "ordered_sha256": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be",
+  "seed": 42,
+  "dimensions": 100,
+  "tokenization": "regex_keep_contractions",
+  "glove_file": "glove.6B.zip",
+  "ridge_alpha": 1.0,
+  "ridge_fitting_types": 68026,
+  "labels": {
+    "negative": 0,
+    "positive": 1
+  },
+  "splits": {
+    "train": {
+      "reviews": 34707,
+      "reviews_with_oov": 31778,
+      "reviews_without_glove_hits": 0
+    },
+    "validation": {
+      "reviews": 7437,
+      "reviews_with_oov": 6813,
+      "reviews_without_glove_hits": 0
+    }
+  },
+  "held_out_test_reviews": 7438
+}

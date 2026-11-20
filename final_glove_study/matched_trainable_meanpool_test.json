@@ -1,0 +1,9 @@
+{
+  "fingerprint": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be",
+  "seed": 42,
+  "limit": 256,
+  "test_reviews": 7438,
+  "selection": "best inner-validation epoch using fixed seed 42",
+  "macro_f1": 0.8910851976612815,
+  "accuracy": 0.8910997579994622
+}

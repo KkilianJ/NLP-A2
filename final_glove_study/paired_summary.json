@@ -1,0 +1,68 @@
+{
+  "selected_gru_validation_ci_scope": "bootstrap over reviews for the fixed seed 42 model pair",
+  "selected_gru_minus_meanpool_macro_f1_ci95": [
+    0.09259850531127682,
+    0.11068672224625652
+  ],
+  "only_gru_correct": 1010,
+  "only_meanpool_correct": 254,
+  "paired_runs": {
+    "tuned_minus_frozen_full": {
+      "by_seed": {
+        "42": 0.013049924335257757,
+        "43": 0.01541804597704921,
+        "44": 0.01562855849165179
+      },
+      "mean": 0.01469884293465292,
+      "sample_sd": 0.0014318792862090552
+    },
+    "full_minus_half_frozen": {
+      "by_seed": {
+        "42": 0.016893721142729134,
+        "43": 0.01454342817402754,
+        "44": 0.007677506427102632
+      },
+      "mean": 0.013038218581286435,
+      "sample_sd": 0.004788934678996207
+    },
+    "tuned_gru_minus_tuned_meanpool": {
+      "by_seed": {
+        "42": -0.002821437149571615,
+        "43": -0.0029696305809561174,
+        "44": -0.0070539473204660474
+      },
+      "mean": -0.004281671683664594,
+      "sample_sd": 0.0024020042627103224
+    }
+  },
+  "selected_setup": "tuned_full",
+  "project1_historical_validation": {
+    "best_supervised": {
+      "representation": "bigrams",
+      "model": "mlp",
+      "score": 0.9011547001243478
+    },
+    "best_supervised_without_bigrams": {
+      "representation": "counts",
+      "model": "svm",
+      "score": 0.8228887811202044
+    }
+  },
+  "stronger_baseline_fixed_seed": {
+    "ci95": [
+      -0.00936469397745556,
+      0.0035008479735060363
+    ],
+    "n": 7437,
+    "meanpool": {
+      "macro_f1": 0.8885101637247523,
+      "accuracy": 0.8885303213661423
+    },
+    "gru": {
+      "macro_f1": 0.8856887265751807,
+      "accuracy": 0.8857066021245126
+    },
+    "only_meanpool_correct": 307,
+    "only_gru_correct": 286
+  }
+}

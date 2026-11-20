@@ -1,0 +1,30 @@
+{
+  "dataset": "mteb/imdb",
+  "split": "train",
+  "tokenization": "regex_keep_contractions",
+  "glove_file": "glove.6B.zip",
+  "dimensions": 100,
+  "character_ngram_sizes": [
+    3,
+    4,
+    5
+  ],
+  "alpha": 1.0,
+  "split_seed": 42,
+  "glove_covered_types": 60326,
+  "imdb_oov_types": 21045,
+  "ridge_training_types": 54293,
+  "evaluation_types": 6033,
+  "evaluation_types_without_known_ngrams": 10,
+  "zero_vector": {
+    "rmse": 0.47272688983034516,
+    "mean_cosine": null,
+    "cosine_defined_words": 0
+  },
+  "ridge": {
+    "rmse": 0.4674036702588049,
+    "mean_cosine": 0.39044810482076125,
+    "cosine_defined_words": 6033
+  },
+  "imdb_oov_types_without_known_ngrams": 62
+}

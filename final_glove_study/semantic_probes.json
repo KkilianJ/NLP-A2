@@ -1,0 +1,307 @@
+{
+  "vocabulary_types": 400001,
+  "neighbors": {
+    "excellent": [
+      {
+        "word": "good",
+        "cosine": 0.7936238050460815
+      },
+      {
+        "word": "quality",
+        "cosine": 0.7606268525123596
+      },
+      {
+        "word": "terrific",
+        "cosine": 0.7415624260902405
+      },
+      {
+        "word": "superb",
+        "cosine": 0.7402958869934082
+      },
+      {
+        "word": "best",
+        "cosine": 0.7287570238113403
+      },
+      {
+        "word": "impressive",
+        "cosine": 0.7217522859573364
+      },
+      {
+        "word": "better",
+        "cosine": 0.7102463841438293
+      },
+      {
+        "word": "solid",
+        "cosine": 0.6999199390411377
+      },
+      {
+        "word": "decent",
+        "cosine": 0.6907012462615967
+      },
+      {
+        "word": "perfect",
+        "cosine": 0.6837303638458252
+      }
+    ],
+    "awful": [
+      {
+        "word": "horrible",
+        "cosine": 0.9219713807106018
+      },
+      {
+        "word": "terrible",
+        "cosine": 0.8742170333862305
+      },
+      {
+        "word": "dreadful",
+        "cosine": 0.8266333937644958
+      },
+      {
+        "word": "horrendous",
+        "cosine": 0.7549645304679871
+      },
+      {
+        "word": "scary",
+        "cosine": 0.7528400421142578
+      },
+      {
+        "word": "unbelievable",
+        "cosine": 0.7459702491760254
+      },
+      {
+        "word": "ugly",
+        "cosine": 0.740597128868103
+      },
+      {
+        "word": "horrifying",
+        "cosine": 0.7347486615180969
+      },
+      {
+        "word": "sad",
+        "cosine": 0.7284238934516907
+      },
+      {
+        "word": "weird",
+        "cosine": 0.709071159362793
+      }
+    ],
+    "boring": [
+      {
+        "word": "tedious",
+        "cosine": 0.723233699798584
+      },
+      {
+        "word": "dull",
+        "cosine": 0.698788046836853
+      },
+      {
+        "word": "bored",
+        "cosine": 0.6892116069793701
+      },
+      {
+        "word": "funny",
+        "cosine": 0.6775657534599304
+      },
+      {
+        "word": "stupid",
+        "cosine": 0.6719059944152832
+      },
+      {
+        "word": "downright",
+        "cosine": 0.6683824062347412
+      },
+      {
+        "word": "silly",
+        "cosine": 0.662968635559082
+      },
+      {
+        "word": "dumb",
+        "cosine": 0.6442317962646484
+      },
+      {
+        "word": "frustrating",
+        "cosine": 0.642220675945282
+      },
+      {
+        "word": "pretentious",
+        "cosine": 0.640895426273346
+      }
+    ],
+    "overrated": [
+      {
+        "word": "underrated",
+        "cosine": 0.8089269995689392
+      },
+      {
+        "word": "underappreciated",
+        "cosine": 0.6878228187561035
+      },
+      {
+        "word": "overhyped",
+        "cosine": 0.6484454274177551
+      },
+      {
+        "word": "idiotic",
+        "cosine": 0.6399948596954346
+      },
+      {
+        "word": "overpaid",
+        "cosine": 0.6046794652938843
+      },
+      {
+        "word": "asinine",
+        "cosine": 0.6023336052894592
+      },
+      {
+        "word": "uncool",
+        "cosine": 0.5911378264427185
+      },
+      {
+        "word": "presumptuous",
+        "cosine": 0.5813459157943726
+      },
+      {
+        "word": "overblown",
+        "cosine": 0.576879620552063
+      },
+      {
+        "word": "overused",
+        "cosine": 0.5748819708824158
+      }
+    ],
+    "screenplay": [
+      {
+        "word": "screenwriter",
+        "cosine": 0.774574875831604
+      },
+      {
+        "word": "script",
+        "cosine": 0.7501036524772644
+      },
+      {
+        "word": "adaptation",
+        "cosine": 0.7288562059402466
+      },
+      {
+        "word": "film",
+        "cosine": 0.7147191762924194
+      },
+      {
+        "word": "cinematography",
+        "cosine": 0.6901074647903442
+      },
+      {
+        "word": "directed",
+        "cosine": 0.675715446472168
+      },
+      {
+        "word": "adapted",
+        "cosine": 0.6715828776359558
+      },
+      {
+        "word": "novel",
+        "cosine": 0.6705841422080994
+      },
+      {
+        "word": "starring",
+        "cosine": 0.6525207757949829
+      },
+      {
+        "word": "co-wrote",
+        "cosine": 0.6511324048042297
+      }
+    ],
+    "good": [
+      {
+        "word": "better",
+        "cosine": 0.893191397190094
+      },
+      {
+        "word": "sure",
+        "cosine": 0.8314562439918518
+      },
+      {
+        "word": "really",
+        "cosine": 0.8297761678695679
+      },
+      {
+        "word": "kind",
+        "cosine": 0.8288268446922302
+      },
+      {
+        "word": "very",
+        "cosine": 0.8260799646377563
+      },
+      {
+        "word": "we",
+        "cosine": 0.8234355449676514
+      },
+      {
+        "word": "way",
+        "cosine": 0.8215397596359253
+      },
+      {
+        "word": "think",
+        "cosine": 0.8205099105834961
+      },
+      {
+        "word": "thing",
+        "cosine": 0.8171300888061523
+      },
+      {
+        "word": "'re",
+        "cosine": 0.8141680955886841
+      }
+    ],
+    "bad": [
+      {
+        "word": "worse",
+        "cosine": 0.7929712533950806
+      },
+      {
+        "word": "good",
+        "cosine": 0.7702797651290894
+      },
+      {
+        "word": "things",
+        "cosine": 0.7653602361679077
+      },
+      {
+        "word": "too",
+        "cosine": 0.7630147933959961
+      },
+      {
+        "word": "thing",
+        "cosine": 0.7609667778015137
+      },
+      {
+        "word": "lot",
+        "cosine": 0.7443647980690002
+      },
+      {
+        "word": "kind",
+        "cosine": 0.740868091583252
+      },
+      {
+        "word": "because",
+        "cosine": 0.739879846572876
+      },
+      {
+        "word": "really",
+        "cosine": 0.7376542091369629
+      },
+      {
+        "word": "n't",
+        "cosine": 0.7336541414260864
+      }
+    ]
+  },
+  "illustrative_pairs": {
+    "good/bad": 0.7702797651290894,
+    "excellent/awful": 0.3724890947341919,
+    "excellent/great": 0.6139309406280518,
+    "boring/dull": 0.6987881064414978,
+    "good/great": 0.759279727935791,
+    "bad/terrible": 0.707213282585144
+  }
+}

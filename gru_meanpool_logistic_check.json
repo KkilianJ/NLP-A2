@@ -1,0 +1,29 @@
+{
+  "ordered_sha256": "0ed0de756c57a4ac8868e7cc2a9970650e930d94cdb0347716d385c9e1e705be",
+  "max_glove_covered_tokens": 128,
+  "inner_split_seed": 42,
+  "selected_C": 0.01,
+  "project1_validation_macro_f1": 0.754952166694999,
+  "grid": [
+    {
+      "C": 0.001,
+      "inner_macro_f1": 0.7740834705913606
+    },
+    {
+      "C": 0.01,
+      "inner_macro_f1": 0.7786652000286951
+    },
+    {
+      "C": 0.1,
+      "inner_macro_f1": 0.7763343727620948
+    },
+    {
+      "C": 1,
+      "inner_macro_f1": 0.7771963397555215
+    },
+    {
+      "C": 10,
+      "inner_macro_f1": 0.7771963397555215
+    }
+  ]
+}

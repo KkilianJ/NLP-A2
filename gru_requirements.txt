@@ -1,0 +1,2 @@
+-r meanpool_requirements.txt
+torch
